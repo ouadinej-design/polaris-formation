@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book — Nej Ouadi · Polaris Formation</title>
+<meta name="description" content="Book de présentation de Nej Ouadi, formateur et consultant en performance commerciale — Polaris Formation, en partenariat avec Pep's Consult (Qualiopi).">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%230F1E3A'/%3E%3Cpath d='M50 10 L57 43 L90 50 L57 57 L50 90 L43 57 L10 50 L43 43 Z' fill='%23C9A24A'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0F1E3A;--navy2:#18284A;--gold:#C9A24A;--golddk:#8C6A1F;--ivory:#F6F4EF;--ink:#24324F;--muted:#4A5672;--line:#E6E8EE}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:#1B2233;font-family:Inter,system-ui,sans-serif;color:var(--navy);line-height:1.5;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.toolbar{position:sticky;top:0;z-index:5;display:flex;justify-content:center;gap:12px;flex-wrap:wrap;padding:12px;background:rgba(15,30,58,.96)}
+.toolbar a,.toolbar button{font:600 14px Inter,sans-serif;color:var(--navy);background:var(--gold);border:0;padding:10px 18px;text-decoration:none;cursor:pointer}
+.toolbar a.alt{background:transparent;color:#fff;border:1px solid #fff}
+.pages{display:flex;flex-direction:column;align-items:center;gap:24px;padding:24px 12px 48px}
+.page{width:210mm;height:297mm;background:#fff;position:relative;overflow:hidden;display:flex;flex-direction:column;padding:20mm 18mm 16mm;box-shadow:0 10px 40px rgba(0,0,0,.35)}
+.page.ivory{background:var(--ivory)}
+.page.dark{background:var(--navy);color:#fff}
+.eyebrow{font-size:9pt;font-weight:600;letter-spacing:.22em;color:var(--golddk);margin:0 0 4mm}
+.dark .eyebrow{color:var(--gold)}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;font-weight:600;margin:0}
+h2{font-size:26pt;line-height:1.15}
+h3{font-size:14pt}
+.rule{width:18mm;height:2px;background:var(--gold);margin:6mm 0 8mm}
+p{margin:0;font-size:10.5pt;color:var(--ink)}
+.dark p{color:#C9D1E0}
+.foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;font-size:8pt;letter-spacing:.22em;color:var(--muted);padding-top:6mm}
+.dark .foot{color:#8C9AB8}
+.foot b{font-family:'Playfair Display',serif;font-size:11pt;letter-spacing:0;color:var(--muted);font-weight:500}
+.star{display:block}
+.card{background:#fff;padding:6mm 7mm;box-shadow:0 1px 0 var(--line),0 6px 18px rgba(15,30,58,.06)}
+.ivory .card{background:#fff}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:6mm}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:5mm}
+.chip{display:inline-block;border:1px solid #C9BFA6;padding:1.6mm 3mm;font-size:9pt;color:var(--ink);margin:0 2mm 2mm 0}
+ul.dots{margin:0;padding:0;list-style:none}
+ul.dots li{display:flex;gap:3mm;font-size:10pt;color:var(--ink);padding:1.4mm 0}
+ul.dots li::before{content:"";flex:none;width:2.6mm;height:2.6mm;margin-top:1.6mm;background:var(--gold);clip-path:polygon(50% 0,59% 41%,100% 50%,59% 59%,50% 100%,41% 59%,0 50%,41% 41%)}
+.dark ul.dots li{color:#E3E8F1}
+.qr{display:flex;align-items:center;gap:4mm}
+.qr img{width:24mm;height:24mm;background:#fff;padding:1.5mm}
+.qr span{font-size:9pt;color:var(--muted)}
+.dark .qr span{color:#C9D1E0}
+.mod{display:grid;grid-template-columns:12mm 1fr;gap:5mm;align-items:start}
+.num{font-family:'Playfair Display',serif;font-size:26pt;font-weight:600;color:var(--gold);line-height:1}
+@media print{
+  @page{size:A4;margin:0}
+  body{background:#fff}
+  .toolbar{display:none}
+  .pages{padding:0;gap:0}
+  .page{box-shadow:none;page-break-after:always;break-after:page}
+}
+@media screen and (max-width:820px){
+  .page{width:100%;height:auto;min-height:0;padding:10vw 7vw 8vw}
+  .grid2,.grid3{grid-template-columns:1fr}
+  .cover{flex-direction:column!important}
+  .cover-left{width:100%!important;padding:8vw 7vw!important}
+  h2{font-size:22pt}
+}
+</style>
+</head>
+<body>
+<div class="toolbar">
+<button type="button" onclick="window.print()">Télécharger en PDF</button>
+<a class="alt" href="https://polaris-formation.vercel.app" target="_blank" rel="noopener">Voir le site</a>
+</div>
+<div class="pages">
+
+<!-- 1. COUVERTURE -->
+<section class="page cover" style="padding:0;flex-direction:row">
+<div class="cover-left" style="width:68mm;background:var(--navy);color:#fff;display:flex;flex-direction:column;justify-content:space-between;padding:22mm 10mm;text-align:center">
+<svg class="star" width="34mm" height="34mm" viewBox="0 0 100 100" style="margin:0 auto" aria-hidden="true"><path d="M50 2 L59 41 L98 50 L59 59 L50 98 L41 59 L2 50 L41 41 Z" fill="#C9A24A"/></svg>
+<div style="display:flex;flex-direction:column;gap:7mm">
+<div><div style="font-family:'Playfair Display',serif;font-size:34pt;font-weight:600;color:var(--gold);line-height:1">25</div><div style="font-size:8pt;letter-spacing:.2em;color:#C9D1E0;margin-top:1mm">ANS DE TERRAIN</div></div>
+<div><div style="font-family:'Playfair Display',serif;font-size:26pt;font-weight:600;color:var(--gold);line-height:1">6 M€</div><div style="font-size:8pt;letter-spacing:.2em;color:#C9D1E0;margin-top:1mm">DE CA PILOTÉ</div></div>
+<div><div style="font-family:'Playfair Display',serif;font-size:26pt;font-weight:600;color:var(--gold);line-height:1">100</div><div style="font-size:8pt;letter-spacing:.2em;color:#C9D1E0;margin-top:1mm">COLLABORATEURS MANAGÉS</div></div>
+<div><div style="font-family:'Playfair Display',serif;font-size:26pt;font-weight:600;color:var(--gold);line-height:1">N°1</div><div style="font-size:8pt;letter-spacing:.2em;color:#C9D1E0;margin-top:1mm">RECORD DE FRANCE<br>OUVERTURE KFC TROYES</div></div>
+</div>
+<div><div style="font-size:7.5pt;letter-spacing:.2em;color:#8C9AB8">EN PARTENARIAT AVEC</div><div style="font-family:'Playfair Display',serif;font-size:14pt;font-weight:600;color:var(--gold);margin-top:1mm">Pep's Consult</div><div style="font-size:7.5pt;color:#8C9AB8;margin-top:1mm">Certifié Qualiopi</div></div>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;padding:22mm 16mm 16mm;background:#fff">
+<div style="display:flex;align-items:center;gap:3mm">
+<svg width="9mm" height="9mm" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 2 L59 41 L98 50 L59 59 L50 98 L41 59 L2 50 L41 41 Z" fill="#C9A24A"/></svg>
+<div style="line-height:1.05"><div style="font-family:'Playfair Display',serif;font-weight:600;font-size:13pt;letter-spacing:.16em">POLARIS</div><div style="font-size:6.5pt;font-weight:600;letter-spacing:.45em;color:var(--golddk)">FORMATION</div></div>
+</div>
+<p class="eyebrow" style="margin-top:26mm">BOOK DE PRÉSENTATION</p>
+<h1 style="font-size:42pt;line-height:1;letter-spacing:.02em">NEJ <span style="color:var(--gold)">OUADI</span></h1>
+<p style="font-size:12pt;margin-top:5mm;color:var(--muted)">Formateur &amp; Consultant en Performance Commerciale</p>
+<div class="rule"></div>
+<p style="font-family:'Playfair Display',serif;font-style:italic;font-size:17pt;color:var(--navy);line-height:1.35">« Donner les outils et les pistes pour s'améliorer »</p>
+<p style="margin-top:8mm;font-size:10.5pt">Hôtellerie · Restauration · Commerce de réseau</p>
+<div style="margin-top:auto;display:flex;flex-direction:column;gap:3mm">
+<p class="eyebrow" style="margin:0">UNE EXPÉRIENCE FORGÉE CHEZ</p>
+<p style="font-family:'Playfair Display',serif;font-size:12pt;color:var(--navy)">TotalEnergies · Burger King · PAUL · Quick · KFC · Hippopotamus</p>
+<div style="display:flex;gap:2mm;flex-wrap:wrap;margin-top:3mm"><span class="chip">Formation en salle</span><span class="chip">Classe virtuelle</span><span class="chip">Analyse terrain</span></div>
+</div>
+</div>
+</section>
+
+<!-- 2. QUI SUIS-JE -->
+<section class="page ivory">
+<p class="eyebrow">QUI SUIS-JE</p>
+<h2>25 ans de terrain pour une vision humaine de la performance</h2>
+<div class="rule"></div>
+<div style="display:grid;grid-template-columns:58mm 1fr;gap:8mm;align-items:start">
+<img src="nej-ouadi.webp" alt="Portrait de Nej Ouadi" style="width:58mm;height:74mm;object-fit:cover;object-position:center top;display:block">
+<div style="display:flex;flex-direction:column;gap:5mm">
+<div class="card"><h3>Mon parcours</h3><p style="margin-top:2mm">Depuis 1999, j'ai dirigé des restaurants, des sites multi-enseignes et des équipes régionales chez TotalEnergies, Burger King, PAUL, Quick, KFC et Hippopotamus. Jusqu'à 6 M€ de chiffre d'affaires pilotés et 100 collaborateurs formés et managés. Spécialiste des ouvertures de sites et des reprises d'unités complexes.</p></div>
+<div class="card"><h3>Mon déclic</h3><p style="margin-top:2mm">La performance économique est le reflet direct du bien-être, de l'engagement et de la sécurité des équipes. On ne pousse pas des chiffres : on fait grandir des personnes, et les résultats suivent.</p></div>
+</div>
+</div>
+<div class="card" style="margin-top:6mm"><h3>Mon parcours en dates</h3>
+<ul class="dots" style="margin-top:2mm">
+<li><span><b>2022–2024</b> · Directeur de site multi-enseigne · TotalEnergies, Burger King, PAUL · 6 M€ · 100 collaborateurs</span></li>
+<li><span><b>2019–2022</b> · Directeur multi-site &amp; Directeur Formateur · TotalEnergies</span></li>
+<li><span><b>2016–2017</b> · Directeur multi-site · PAUL · 3 centres de profits</span></li>
+<li><span><b>2015–2016</b> · Superviseur régional · Quick · 3 sites · 80 collaborateurs</span></li>
+<li><span><b>2009–2012</b> · Directeur de site · KFC · record de France à l'ouverture de Troyes</span></li>
+<li><span><b>1999–2009</b> · TotalEnergies, puis directeur adjoint chez Hippopotamus</span></li>
+</ul></div>
+<div class="foot"><span>POLARIS FORMATION</span><b>02</b></div>
+</section>
+
+<!-- 3. EXPERTISE -->
+<section class="page">
+<p class="eyebrow">MON EXPERTISE</p>
+<h2>Mes compétences clés</h2>
+<div class="rule"></div>
+<div class="grid3">
+<div class="card" style="border-top:3px solid var(--gold)"><h3>Savoir-faire terrain</h3><ul class="dots" style="margin-top:3mm"><li>Ouverture &amp; reprise de sites</li><li>Gestion d'équipes hétérogènes</li><li>Conduite du changement</li><li>Pilotage des KPI : conversion, panier moyen, marge</li><li>Formation &amp; tutorat</li></ul></div>
+<div class="card" style="background:var(--navy);color:#fff;border-top:3px solid var(--gold)"><h3>Savoirs théoriques</h3><ul class="dots" style="margin-top:3mm"><li style="color:#E3E8F1">BTS Management des Unités Commerciales</li><li style="color:#E3E8F1">Formation e-learning « Trans-formations »</li><li style="color:#E3E8F1">Ennéagramme · Triangle de Karpman</li><li style="color:#E3E8F1">Management intergénérationnel</li></ul></div>
+<div class="card" style="border-top:3px solid var(--gold)"><h3>Philosophie</h3><ul class="dots" style="margin-top:3mm"><li>« L'individuel au service du collectif »</li><li>Valorisation · écoute · adaptation</li><li>Bien-être au travail</li><li>Performance durable</li></ul></div>
+</div>
+<p style="font-family:'Playfair Display',serif;font-style:italic;font-size:15pt;color:var(--golddk);text-align:center;margin:12mm 8mm 0;line-height:1.4">Une double compétence rare : le réflexe opérationnel du terrain et la lecture comportementale des équipes.</p>
+<div style="margin-top:12mm;background:var(--ivory);padding:7mm 8mm;display:grid;grid-template-columns:1fr auto;gap:6mm;align-items:center">
+<div><p class="eyebrow" style="margin-bottom:2mm">MON PITCH EN 1 MINUTE</p><h3>Faisons connaissance</h3><p style="margin-top:2mm">Mon parcours, ma méthode et ce que je peux apporter à vos équipes, en une minute.</p></div>
+<div class="qr"><img src="qr-pitch.svg" alt="QR code du pitch vidéo"><span>Scannez<br>pour voir<br>la vidéo</span></div>
+</div>
+<div class="foot"><span>POLARIS FORMATION</span><b>03</b></div>
+</section>
+
+<!-- 4. CATALOGUE -->
+<section class="page ivory">
+<p class="eyebrow">CATALOGUE DE FORMATIONS</p>
+<h2>Trois piliers Polaris, des parcours sur mesure</h2>
+<div class="rule"></div>
+<p style="margin-top:-3mm;margin-bottom:6mm;color:var(--muted)">Conçus avec Pep's Consult et ancrés dans mon expérience du réseau. La liste complète des modules figure en annexe.</p>
+<div style="display:flex;flex-direction:column;gap:5mm">
+<div class="card mod"><span class="num">01</span><div><h3>Performance Commerciale</h3><p class="eyebrow" style="margin:1mm 0 2mm;font-size:8pt">VENDRE PLUS &amp; MIEUX</p><ul class="dots"><li>Vendre Plus et Mieux · Accueil Gagnant</li><li>Manager Commerçant · HV Ambassadeur</li><li>Commerce Station, Restauration &amp; Lavage</li></ul></div></div>
+<div class="card mod"><span class="num">02</span><div><h3>Excellence Managériale</h3><p class="eyebrow" style="margin:1mm 0 2mm;font-size:8pt">SALLE / DISTANCIEL</p><ul class="dots"><li>Coaching de la performance · Leadership</li><li>Motivation d'équipe &amp; délégation · Tutorat</li><li>Entretiens, recrutement &amp; communication</li></ul></div></div>
+<div class="card mod"><span class="num">03</span><div><h3>Environnement &amp; Sécurité</h3><p class="eyebrow" style="margin:1mm 0 2mm;font-size:8pt">TERRAIN / E-LEARNING</p><ul class="dots"><li>Gestion des incivilités · Sûreté</li><li>Management de la sécurité · HACCP</li><li>Gestes &amp; postures — PRAP, prévention des TMS</li></ul></div></div>
+</div>
+<div style="margin-top:6mm;background:var(--navy);color:#fff;padding:6mm 8mm;display:flex;align-items:center;gap:5mm">
+<svg width="9mm" height="9mm" viewBox="0 0 100 100" style="flex:none" aria-hidden="true"><path d="M50 2 L59 41 L98 50 L59 59 L50 98 L41 59 L2 50 L41 41 Z" fill="#C9A24A"/></svg>
+<p style="color:#fff;font-weight:600">Tous les modules sont disponibles en classe virtuelle. <span style="color:var(--gold);font-weight:500;font-style:italic">Flexibilité · économie · interactivité.</span></p>
+</div>
+<div class="foot"><span>POLARIS FORMATION</span><b>04</b></div>
+</section>
+
+<!-- 5. PRAP -->
+<section class="page">
+<p class="eyebrow">FORMATION PHARE</p>
+<h2>PRAP : prévenir les risques liés à l'activité physique</h2>
+<div class="rule"></div>
+<p style="font-size:11.5pt">Une démarche construite sur l'analyse réelle de vos postes de travail, pour faire de chaque collaborateur un acteur de la prévention.</p>
+<div class="grid3" style="margin-top:8mm">
+<div style="background:var(--navy);color:#fff;padding:7mm"><div class="num">H</div><div style="font-weight:600;margin-top:2mm">Humain</div></div>
+<div style="background:var(--navy);color:#fff;padding:7mm"><div class="num">O</div><div style="font-weight:600;margin-top:2mm">Organisation</div></div>
+<div style="background:var(--navy);color:#fff;padding:7mm"><div class="num">T</div><div style="font-weight:600;margin-top:2mm">Technique</div></div>
+</div>
+<ul class="dots" style="margin-top:8mm">
+<li>Méthodologie HOT et modèle de prévention à trois niveaux</li>
+<li>Analyse des risques sur site, poste par poste</li>
+<li>Un modèle d'acteur PRAP dédié à votre activité</li>
+<li>Vidéothèque de gestes et postures par poste de travail, conçue avec Rémi Jozwicki</li>
+</ul>
+<div style="margin-top:auto;background:var(--ivory);padding:8mm;display:grid;grid-template-columns:1fr auto;gap:6mm;align-items:center">
+<div><p class="eyebrow" style="margin-bottom:2mm">VIDÉO</p><h3>Le Poids des Gestes : comprendre le PRAP</h3><p style="margin-top:2mm">Comment les gestes du quotidien sollicitent le corps, et les bonnes pratiques pour prévenir les risques.</p></div>
+<div class="qr"><img src="qr-prap.svg" alt="QR code de la vidéo PRAP"><span>Scannez<br>pour voir<br>la vidéo</span></div>
+</div>
+<div class="foot"><span>POLARIS FORMATION</span><b>05</b></div>
+</section>
+
+<!-- 6. ALLIANCE -->
+<section class="page ivory">
+<p class="eyebrow">L'ALLIANCE</p>
+<h2>Une équipe d'experts pour la réussite de vos collaborateurs</h2>
+<div class="rule"></div>
+<p style="font-size:11pt">À mon expertise terrain s'ajoutent, via Pep's Consult, une ingénierie pédagogique certifiée Qualiopi et des intervenants aux profils uniques. Ensemble, nous concevons des parcours sur mesure alliant rigueur, impact et bien-être.</p>
+<div style="display:flex;flex-direction:column;gap:5mm;margin-top:8mm">
+<div class="card" style="display:grid;grid-template-columns:16mm 1fr;gap:6mm;align-items:center"><div style="width:16mm;height:16mm;background:var(--navy);color:var(--gold);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14pt;font-weight:600">NB</div><div><h3>Nada Bitar</h3><p class="eyebrow" style="margin:1mm 0 1.5mm;font-size:8pt">PEP'S CONSULT</p><p>Conceptrice des parcours (ingénierie de formation certifiée Qualiopi, ludopédagogie) et coach professionnelle. Co-anime les formations.</p></div></div>
+<div class="card" style="display:grid;grid-template-columns:16mm 1fr;gap:6mm;align-items:center"><div style="width:16mm;height:16mm;background:var(--navy);color:var(--gold);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14pt;font-weight:600">RJ</div><div><h3>Rémi Jozwicki</h3><p class="eyebrow" style="margin:1mm 0 1.5mm;font-size:8pt">SANTÉ &amp; PRÉVENTION</p><p>Master Santé (APA), expert PRAP et TMS. Conçoit une bibliothèque de capsules e-learning gestes et postures, poste par poste.</p></div></div>
+<div class="card" style="display:grid;grid-template-columns:16mm 1fr;gap:6mm;align-items:center"><div style="width:16mm;height:16mm;background:var(--navy);color:var(--gold);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14pt;font-weight:600">DJ</div><div><h3>Dimitri Jozwicki</h3><p class="eyebrow" style="margin:1mm 0 1.5mm;font-size:8pt">CONFÉRENCIER</p><p>Sprinteur, finaliste paralympique (Tokyo et Paris, T38). Conférences sur le dépassement de soi, la motivation et la résilience en entreprise.</p></div></div>
+</div>
+<div class="foot"><span>POLARIS FORMATION</span><b>06</b></div>
+</section>
+
+<!-- 7. TÉMOIGNAGES -->
+<section class="page">
+<p class="eyebrow">TÉMOIGNAGES</p>
+<h2>Ce qu'en disent les participantes</h2>
+<div class="rule"></div>
+<div style="background:var(--navy);color:#fff;padding:9mm 10mm">
+<svg width="12mm" height="10mm" viewBox="0 0 40 32" aria-hidden="true"><path d="M0 32V18C0 8 5 2 15 0l2 4c-6 2-8 6-8 10h7v18H0zm23 0V18c0-10 5-16 15-18l2 4c-6 2-8 6-8 10h7v18H23z" fill="#C9A24A"/></svg>
+<p style="font-family:'Playfair Display',serif;font-size:13pt;line-height:1.5;color:#fff;margin-top:4mm">Tu as su nous accompagner avec beaucoup d'empathie, de disponibilité et de bienveillance, tout en sachant être ferme quand il le fallait. Tu nous as transmis énormément de connaissances, de conseils et d'outils précieux pour progresser et développer notre activité. Je repars avec une motivation décuplée et surtout une nouvelle confiance en moi pour passer à l'action.</p>
+<p style="font-size:9pt;font-weight:600;letter-spacing:.1em;color:var(--gold);margin-top:5mm">BAYA · FORMATION TECHNIQUES DE VENTE</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:5mm;margin-top:6mm">
+<div class="card" style="border-left:0;background:var(--ivory)"><p>« La formation était vraiment au top ! Elle nous permet de prendre conscience de nos erreurs et d'apprendre de nouvelles techniques. C'est une formation à ne surtout pas rater. »</p><p style="font-size:8.5pt;font-weight:600;letter-spacing:.1em;color:var(--golddk);margin-top:3mm">AÏCHA · FORMATION VENTE</p></div>
+<div class="card" style="background:var(--ivory)"><p>« Les mises en situation, c'est vraiment la clé. Les méthodes sont excellentes et surtout ludiques, et le formateur est pédagogue et bienveillant. »</p><p style="font-size:8.5pt;font-weight:600;letter-spacing:.1em;color:var(--golddk);margin-top:3mm">ANNE-SOPHIE · FORMATION VENTE</p></div>
+<div class="card" style="background:var(--ivory)"><p>« Le formateur nous a vraiment mises à l'aise, et sa capacité à nous booster est précieuse. Les jeux de rôle ont été un vrai plus. »</p><p style="font-size:8.5pt;font-weight:600;letter-spacing:.1em;color:var(--golddk);margin-top:3mm">RAJA · FORMATION VENTE</p></div>
+</div>
+<div class="foot"><span>POLARIS FORMATION</span><b>07</b></div>
+</section>
+
+<!-- 8. CONTACT -->
+<section class="page dark">
+<svg width="22mm" height="22mm" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 2 L59 41 L98 50 L59 59 L50 98 L41 59 L2 50 L41 41 Z" fill="#C9A24A"/></svg>
+<p class="eyebrow" style="margin-top:10mm">CONTACT</p>
+<h2 style="color:#fff">Développons ensemble les talents de demain</h2>
+<div class="rule"></div>
+<div style="background:var(--navy2);padding:8mm 9mm">
+<h3 style="color:#fff;font-size:18pt">Nej Ouadi</h3>
+<p style="margin-top:1mm">Formateur &amp; Consultant en Performance Commerciale · Polaris Formation</p>
+<div style="display:grid;grid-template-columns:1fr auto;gap:6mm;margin-top:6mm;align-items:center">
+<div style="display:flex;flex-direction:column;gap:2.5mm;font-size:11pt;color:#fff">
+<span>06 42 04 03 20</span>
+<span>nej.ouadi@yahoo.fr</span>
+<span>polaris-formation.vercel.app</span>
+<span>LinkedIn — Nej Ouadi</span>
+<span style="color:#C9D1E0;font-size:10pt">Grand-Est et au-delà</span>
+</div>
+<div style="display:flex;gap:5mm">
+<div style="text-align:center"><img src="qr-site.svg" alt="QR code du site" style="width:24mm;height:24mm;background:#fff;padding:1.5mm;display:block"><span style="font-size:8pt;color:#C9D1E0">Site</span></div>
+<div style="text-align:center"><img src="qr-linkedin.svg" alt="QR code LinkedIn" style="width:24mm;height:24mm;background:#fff;padding:1.5mm;display:block"><span style="font-size:8pt;color:#C9D1E0">LinkedIn</span></div>
+</div>
+</div>
+</div>
+<div style="background:var(--navy2);padding:7mm 9mm;margin-top:5mm">
+<h3 style="color:#fff">Pep's Consult — Nada Bitar</h3>
+<p style="margin-top:1mm">Conception, co-animation &amp; coaching · Organisme certifié Qualiopi</p>
+<p style="margin-top:3mm;color:#fff">nada.bitar@pepsconsult.fr</p>
+<p style="margin-top:3mm;font-size:9.5pt">Financement possible par l'OPCO de votre entreprise, ou par France Travail pour les particuliers, selon éligibilité.</p>
+</div>
+<div class="foot"><span>POLARIS FORMATION</span><span style="font-family:'Playfair Display',serif;font-style:italic;letter-spacing:0;font-size:10pt;color:var(--gold)">« Donner les outils et les pistes pour s'améliorer »</span></div>
+</section>
+
+<!-- 9. ANNEXE -->
+<section class="page ivory">
+<p class="eyebrow">ANNEXE</p>
+<h2>Catalogue complet des formations</h2>
+<div class="rule"></div>
+<p style="margin-top:-3mm;margin-bottom:5mm;color:var(--muted)">Modules que j'anime, structurés selon les domaines du réseau. Durées et modalités adaptables à votre contexte.</p>
+<div style="display:flex;flex-direction:column;gap:4mm">
+<div class="card"><p class="eyebrow" style="margin-bottom:1.5mm">COMMERCE</p><p style="font-size:9.5pt">Vendre Plus et Mieux · Accueil Gagnant · Manager Commerçant · HV Ambassadeur · Commerce Station · Commerce Restauration · Commerce Lavage · Mon métier, la station · Connaître la réglementation</p></div>
+<div class="card"><p class="eyebrow" style="margin-bottom:1.5mm">MANAGEMENT</p><p style="font-size:9.5pt">Communication &amp; esprit d'équipe · Tutorat, former un nouveau · Entretenir la motivation · Gérer les conflits · Déléguer efficacement · Prendre la parole · Entretiens de recrutement · Entretiens annuels · Coaching de la performance · RH &amp; Droit social · Prévention RPS · Comportements addictifs · Reconnaître un faux billet</p></div>
+<div class="card"><p class="eyebrow" style="margin-bottom:1.5mm">SÉCURITÉ &amp; SÛRETÉ</p><p style="font-size:9.5pt">Culture HSE · Exercice incendie &amp; évacuation · Management de la sécurité · SSI · GPLc · Sauveteur Secouriste du Travail (SST) · Gérer les incivilités · Les mots qui sauvent · Système de Management Intégré (SMI) · Sécurité travaux en station · Sécurité routière</p></div>
+<div class="card"><p class="eyebrow" style="margin-bottom:1.5mm">QUALITÉ &amp; HYGIÈNE</p><p style="font-size:9.5pt">HACCP Référent · Maîtriser la sécurité des aliments · L'hygiène en restauration · Gestion des carburants I &amp; II · Sensibilisation à l'efficacité énergétique</p></div>
+<div class="card"><p class="eyebrow" style="margin-bottom:1.5mm">SANTÉ &amp; ADMINISTRATIF</p><p style="font-size:9.5pt">Attitude Santé &amp; gestes/postures · PRAP, prévention des TMS (e-learning) · ISIS II Boutique · ISIS II Restauration</p></div>
+</div>
+<p style="text-align:center;font-style:italic;font-size:9pt;color:var(--muted);margin-top:5mm">Programmes détaillés (objectifs, contenu, durée, prérequis) disponibles sur demande.</p>
+<div class="foot"><span>POLARIS FORMATION · SIRET 106 566 946 00013</span><b>09</b></div>
+</section>
+
+</div>
+</body>
+</html>
